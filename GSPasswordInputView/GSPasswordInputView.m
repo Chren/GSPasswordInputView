@@ -31,7 +31,6 @@ static const NSInteger kDefaultFontSize = 40;
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        _numberOfDigit = kDefaultNumberOfDigit;
         [self initNumberViewWithNumberOfDigit:kDefaultNumberOfDigit];
     }
     return self;
@@ -41,8 +40,8 @@ static const NSInteger kDefaultFontSize = 40;
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _numberOfDigit = kDefaultNumberOfDigit;
         [self initNumberViewWithNumberOfDigit:kDefaultNumberOfDigit];
+        
     }
     return self;
 }
@@ -211,4 +210,10 @@ static const NSInteger kDefaultFontSize = 40;
     }
 }
 
+
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+//{
+//    UIView *view = [super hitTest:point withEvent:event];
+//    return view;
+//}
 @end
